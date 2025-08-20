@@ -14,9 +14,7 @@ class HeaderSection extends StatelessWidget {
       child: Column(
         children: [
           CircleAvatar(
-            radius: 80,
-            // You can add your image here:
-            // backgroundImage: AssetImage('assets/profile_pic.jpg'),
+            radius: 90,
             backgroundImage:  const AssetImage('assets/images/profile_pic.jpg'),
           ),
           const SizedBox(height: 24),

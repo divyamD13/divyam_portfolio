@@ -10,7 +10,6 @@ ThemeData appTheme() {
       bodyColor: kTextColor,
       displayColor: kTextColor,
     ),
-    // FIX: Changed CardTheme to CardThemeData
     cardTheme: const CardThemeData(
       color: kSurfaceColor,
       elevation: 4,

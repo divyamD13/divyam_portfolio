@@ -30,7 +30,7 @@ class ContactSection extends StatelessWidget {
 
 ElevatedButton.icon(
   onPressed: () async {
-    const String email = 'divyam.2201042cs@iiitbh.ac.in';
+    const String email = 'divyamdivesh13@gmail.com';
     final Uri emailUri = Uri(
       scheme: 'mailto',
       path: email,
@@ -40,16 +40,12 @@ ElevatedButton.icon(
     );
 
     try {
-      // Use the launchUrl method with the specific launch mode
       await launchUrl(
         emailUri,
         mode: LaunchMode.externalApplication,
       );
     } catch (e) {
-      // If launching fails, copy the email to the clipboard as a fallback
       await Clipboard.setData(const ClipboardData(text: email));
-      
-      // Show a confirmation message to the user
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Could not open email app. Email address copied to clipboard!'),
@@ -66,8 +62,6 @@ ElevatedButton.icon(
     textStyle: const TextStyle(fontSize: 18),
   ),
 ),
-
-// ... rest of the file
           const SizedBox(height: 40),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

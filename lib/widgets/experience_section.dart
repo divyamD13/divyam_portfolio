@@ -25,10 +25,9 @@ class ExperienceSection extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // --- FIX IS HERE ---
                     Wrap(
-                      spacing: 20, // Horizontal space between children
-                      runSpacing: 10, // Vertical space between lines
+                      spacing: 20,
+                      runSpacing: 10,
                       alignment: WrapAlignment.spaceBetween,
                       children: [
                         Text(
@@ -41,7 +40,6 @@ class ExperienceSection extends StatelessWidget {
                         )
                       ],
                     ),
-                    // --- END OF FIX ---
                     const SizedBox(height: 8),
                     const Text(
                       'Froker (Remote)',
